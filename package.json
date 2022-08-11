@@ -1,0 +1,22 @@
+{
+  "name": "strava_api",
+  "version": "1.0.0",
+  "description": "",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "author": "Draco",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.2",
+    "parcel": "^2.6.2"
+  },
+  "dependencies": {
+    "core-js": "^3.24.1",
+    "leaflet": "^1.8.0",
+    "regenerator-runtime": "^0.13.9",
+    "sass": "^1.54.0"
+  }
+}
