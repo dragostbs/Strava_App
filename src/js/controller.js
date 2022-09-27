@@ -178,31 +178,29 @@ class App {
         activity.addEventListener("click", function (e) {
           const coordEl = e.target.closest(".activities");
 
-          const coords = data.find(
+          const coordsMove = data.find(
             (coords) => coords.start_latlng == coordEl.dataset.id
           );
 
-          map.setView(coords.start_latlng, 14, {
+          map.setView(coordsMove.start_latlng, 14, {
             animate: true,
             pan: {
               duration: 1,
             },
           });
 
-          for (let i = 0; i < data.length; i++) {
-            const coords = L.Polyline.fromEncoded(
-              data[i].map.summary_polyline
-            ).getLatLngs();
+          const coords = L.Polyline.fromEncoded(
+            coordsMove.map.summary_polyline
+          ).getLatLngs();
 
-            L.polyline(coords, {
-              color: "#FF4500",
-              weight: 5,
-              opacity: 0.7,
-              lineJoin: "round",
-            }).addTo(map);
-          }
+          L.polyline(coords, {
+            color: "#FF4500",
+            weight: 5,
+            opacity: 0.7,
+            lineJoin: "round",
+          }).addTo(map);
 
-          L.marker(coords.start_latlng)
+          L.marker(coordsMove.start_latlng)
             .addTo(map)
             .bindPopup(
               L.popup({
