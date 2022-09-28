@@ -14,6 +14,8 @@ const activity = document.querySelector(".activities");
 const activityData = document.querySelector(".data");
 const date = document.querySelector(".info__date");
 const info = document.querySelector(".info");
+const modal = document.querySelector(".modal");
+const theMap = document.getElementById("map");
 
 class App {
   constructor() {
@@ -131,6 +133,33 @@ class App {
             distance: result.distance,
             startDate: result.start_date,
           };
+
+          // Auto display half marathons
+          const halfMarathon = function () {
+            if (result.distance >= 21000) {
+              const html = `
+                  <div class = "box">
+                    <p>Congratulations, Half Marathon ${(
+                      result.distance / 1000
+                    ).toFixed(2)} km !!! 👑🏃🥇</p>
+                  </div>
+              `;
+              modal.insertAdjacentHTML("beforeend", html);
+            }
+          };
+          halfMarathon();
+
+          const openModal = function () {
+            modal.classList.remove("hidden");
+            theMap.style.zIndex = "-999";
+          };
+          setTimeout(openModal, 4000);
+
+          const closeModal = function () {
+            modal.classList.add("hidden");
+            theMap.style.zIndex = "0";
+          };
+          setTimeout(closeModal, 8000);
 
           const html = `
             <div class="activities activities--scroll" data-id="${
