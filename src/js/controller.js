@@ -225,7 +225,7 @@ class App {
           L.polyline(coords, {
             color: "#FF4500",
             weight: 5,
-            opacity: 0.7,
+            opacity: 0.8,
             lineJoin: "round",
           }).addTo(map);
 
