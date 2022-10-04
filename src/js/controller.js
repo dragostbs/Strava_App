@@ -16,6 +16,9 @@ const date = document.querySelector(".info__date");
 const info = document.querySelector(".info");
 const modal = document.querySelector(".modal");
 const theMap = document.getElementById("map");
+const activityData2 = document.querySelector(".data2");
+const tabsContainer = document.querySelector(".arrows");
+const tabsContent = document.querySelectorAll(".information");
 
 class App {
   constructor() {
@@ -74,6 +77,9 @@ class App {
           averageSpeed: activ.average_speed,
           averageCadence: activ.average_cadence,
           calories: activ.calories,
+          heartRate: activ.average_heartrate,
+          maxHeartRate: activ.max_heartrate,
+          maxSpeed: activ.max_speed,
         };
 
         const html = `
@@ -103,6 +109,44 @@ class App {
         `;
         activityData.innerHTML = "";
         activityData.insertAdjacentHTML("afterbegin", html);
+
+        const html2 = `
+          <div class="data__header ">
+              <h2>Results</h2>
+              <h2>Time: ${
+                activ.movingTime.toString().slice(0, 2) +
+                ":" +
+                activ.movingTime.toString().slice(2, 4)
+              }</h2>
+            </div>
+            <hr />
+            <div class="info__data">
+              <div>
+                <h3 class="info__characteristics">Average Heart Rate</h3>
+                <h3 class="info__number">${activ.heartRate}</h3>
+              </div>
+              <div>
+                <h3 class="info__characteristics">Max Speed</h3>
+                <h3 class="info__number">${activ.maxSpeed}</h3>
+              </div>
+              <div>
+                <h3 class="info__characteristics">Max Heart Rate</h3>
+                <h3 class="info__number">${activ.maxHeartRate}</h3>
+              </div>
+            </div>
+        `;
+        activityData2.innerHTML = "";
+        activityData2.insertAdjacentHTML("afterbegin", html2);
+
+        tabsContainer.addEventListener("click", function (e) {
+          const clicked = e.target.closest(".btn-tab");
+
+          if (!clicked) return;
+          tabsContent.forEach((c) => c.classList.remove("info-active"));
+          document
+            .querySelector(`.info-change--${clicked.dataset.tab}`)
+            .classList.add("info-active");
+        });
       } catch (err) {
         console.log(err);
       }
