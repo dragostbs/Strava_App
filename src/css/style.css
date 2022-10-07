@@ -266,6 +266,12 @@ h2 {
   cursor: pointer;
   width: 40px;
   height: 40px;
+  background-color: #8d99ae;
+  border-radius: 20px;
+}
+
+.btn-arrow:hover {
+  background-color: #2b2d42c3;
 }
 
 .left {
@@ -278,4 +284,17 @@ h2 {
 
 .info-active {
   display: inline;
+}
+
+.line1 {
+  border: 1px solid #ff4500;
+  border-radius: 20px;
+  width: 50%;
+}
+
+.line2 {
+  border: 1px solid #ff4500;
+  border-radius: 20px;
+  width: 50%;
+  margin-left: 50%;
 }
