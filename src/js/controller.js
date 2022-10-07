@@ -92,6 +92,7 @@ class App {
               }</h2>
             </div>
             <hr />
+            <hr / class="line1">
             <div class="info__data">
               <div>
                 <h3 class="info__characteristics">Average Speed</h3>
@@ -120,6 +121,7 @@ class App {
               }</h2>
             </div>
             <hr />
+            <hr / class="line2">
             <div class="info__data">
               <div>
                 <h3 class="info__characteristics">Average Heart Rate</h3>
