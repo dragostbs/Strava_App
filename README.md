@@ -1,29 +1,21 @@
-[Demo Live](https://peppy-crepe-9ea2a6.netlify.app/)
+# Strava Running Application
 
+Keep track of your daily activities with Garmin Connect and Strava
 
+## Built With
 
+[![Next][Next.js]][Next-url]
+[![React][React.js]][React-url]
+[![Vue][Vue.js]][Vue-url]
+[![Angular][Angular.io]][Angular-url]
+[![Svelte][Svelte.dev]][Svelte-url]
+[![Laravel][Laravel.com]][Laravel-url]
+[![Bootstrap][Bootstrap.com]][Bootstrap-url]
+[![JQuery][JQuery.com]][JQuery-url]
 
+## Demo
 
-
-
-
-
-
-
-
-### Built With
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-
-
+[Demo Live 🏃‍♂️](https://peppy-crepe-9ea2a6.netlify.app/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
