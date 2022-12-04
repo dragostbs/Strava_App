@@ -5,8 +5,7 @@ Keep track of your daily activities with Garmin Connect and Strava
 ## Built With
 
 [![Javascript][Javascript.com]][Javascript-url]
-
-
+[![Html][Html.com]][Html-url]
 
 ## Demo
 
@@ -15,5 +14,7 @@ Keep track of your daily activities with Garmin Connect and Strava
 <!-- MARKDOWN LINKS & IMAGES -->
 [Javascript.com]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
 [Javascript-url]: (https://www.javascript.com/)
+[Html.com]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
+[Html-url]: (https://html.com/)
 
 
