@@ -1,6 +1,6 @@
 # Strava Running Application 🏃‍♂️
 
-Keep track of your daily activities with Garmin Connect and Strava
+Keep track of your daily activities with Garmin Connect and Strava API
 
 ## Built With
 
