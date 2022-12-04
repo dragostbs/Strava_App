@@ -13,7 +13,7 @@ Keep track of your daily activities with Garmin Connect and Strava
 [Demo Live 🏃‍♂️](https://peppy-crepe-9ea2a6.netlify.app/)
 
 <!-- MARKDOWN LINKS & IMAGES -->
-[Javascript.com]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[Javascript.com]: https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black
 [Javascript-url]: (https://www.javascript.com/)
 
 
