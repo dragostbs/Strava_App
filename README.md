@@ -1,9 +1,10 @@
-# Strava Running Application
+# Strava Running Application 🏃‍♂️
 
 Keep track of your daily activities with Garmin Connect and Strava
 
 ## Built With
 
+<div align="center">
 [![Next][Next.js]][Next-url]
 [![React][React.js]][React-url]
 [![Vue][Vue.js]][Vue-url]
@@ -12,6 +13,7 @@ Keep track of your daily activities with Garmin Connect and Strava
 [![Laravel][Laravel.com]][Laravel-url]
 [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 [![JQuery][JQuery.com]][JQuery-url]
+ </div>
 
 ## Demo
 
