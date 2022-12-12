@@ -180,10 +180,10 @@ class App {
 
           // Auto display half marathons
           const halfMarathon = function () {
-            if (result.distance >= 21000) {
+            if (result.distance >= 10000) {
               const html = `
                   <div class = "box">
-                    <p>Congratulations, Half Marathon ${(
+                    <p>Congratulations, Prepare to Marathon ${(
                       result.distance / 1000
                     ).toFixed(2)} km !!! 👑🏃🥇</p>
                   </div>
