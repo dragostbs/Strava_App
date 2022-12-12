@@ -183,7 +183,7 @@ class App {
             if (result.distance >= 10000) {
               const html = `
                   <div class = "box">
-                    <p>Congratulations, Prepare to Marathon ${(
+                    <p>Great, Prepare to Marathon ${(
                       result.distance / 1000
                     ).toFixed(2)} km !!! 👑🏃🥇</p>
                   </div>
