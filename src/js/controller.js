@@ -66,7 +66,6 @@ class App {
           `${API_ACTIVITIES}${id}?access_token=${accessKey.access_token}`
         );
         const data = await response.json();
-        console.log(data);
 
         if (!response.ok)
           throw new Error(`${data.message} (${response.status})`);
@@ -166,7 +165,6 @@ class App {
           `${API_RESULTS}?access_token=${accessKey.access_token}`
         );
         const data = await response.json();
-        console.log(data);
 
         if (!response.ok)
           throw new Error(`${data.message} (${response.status})`);
